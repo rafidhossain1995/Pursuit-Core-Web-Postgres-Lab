@@ -1,4 +1,4 @@
-# Create Your Database
+# Pursuit-Core-Web-Postgres-Lab
 
 Build a database for a Facebook-style app. Your app should have three routes with corresponding **SQL tables**: Users, Posts, and Pictures.
 
