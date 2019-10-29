@@ -1,6 +1,6 @@
 # Pursuit-Core-Web-Postgres-Lab
 
-Build a database for a Facebook-style app. Your Database should have **SQL tables** for the following data: Users, Posts, and Likes.
+Build a database for a Facebook-style app. Your Database should have **SQL tables** for the following data: Users, Posts, and Likes. Write your SQL code in the file `facebook_db.sql`.
 
 Let's expand this simple structure to something a little bit deeper. Let's also use the conceptual structure of _primary_ and _foreign_ keys. Our database, at the end of the day, should be structured like this:
 
@@ -50,6 +50,24 @@ Write SQL statements that accomplish/express the following.
 - [ ] Find the user who has given the most likes.
 - [ ] Find the most liked post.
 - [ ] Find all the information of the user how posted the most liked post.
+
+### Keep in mind.
+
+Here is an example syntax for adding a couple of users:
+
+```
+INSERT INTO users (name, age) VALUES ("Victoria Adams", 47), ("Gerson Lopez", 33);
+```
+
+A couple of things are critical about this:
+
+- Because the `id` column is a `SERIAL PRIMARY KEY`, it will automatically create new `id`s when you add new users. So, we aren't including `id`s in our columns here.
+- In our `VALUES` section, each value must have exactly the same number of columns as the model outlined in `INSERT INTO`. For example, this one has two columns (`(name, age)`), and therefore each User added has two columns as well.
+
+Underneath your table structure, go ahead and add some `INSERT` statements to seed your database with some information.
+
+**Hint**: Be sure to create tables/items with primary keys before you create tables/items with their corresponding foreign keys! For example, I'm not going to create Posts before I create Users- my database won't be able to recogize the User my new Post is connected to, because I haven't created one yet!
+
 
 ## v2: Bonus
 
