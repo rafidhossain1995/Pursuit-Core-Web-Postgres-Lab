@@ -20,6 +20,9 @@ Let's expand this simple structure to something a little bit deeper. Let's also 
   - `liker_id`: integer, **foreign key** referencing the column `id` in Users
   - `post_id`: integer, **foreign key** referencing the column `id` in Posts.
 
+### Diagram
+![database diagram v1](./assets/facebook_db_diagram_v1.png)
+
 ### Explanation
 
 - Users are the main actors in our Database.
