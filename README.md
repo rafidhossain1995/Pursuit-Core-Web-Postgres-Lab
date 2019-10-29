@@ -84,21 +84,7 @@ Let's break it down:
 - Comments and Likes are connected to both the Users table and the Posts table. This is because, even though Posts are made by one user, a comment could be made by a different user.
 - Albums contain many Pictures, but each Picture isn't associated with a User - they are associated with an Album, which is then associated with a User. This is because only the user who created the Album can add a Picture to it. Therefore, a `user_id` column in Pictures would be redundant.
 
-Your task today is to create a .sql file that creates and properly associates these tables.
-
-## Bonus
-
-Here is an example syntax for adding a couple of users:
-
-```
-INSERT INTO users (name, age) VALUES ("Victoria Adams", 47), ("Gerson Lopez", 33);
-```
-
-A couple of things are critical about this:
-
-- Because the `id` column is a `SERIAL PRIMARY KEY`, it will automatically create new `id`s when you add new users. So, we aren't including `id`s in our columns here.
-- In our `VALUES` section, each value must have exactly the same number of columns as the model outlined in `INSERT INTO`. For example, this one has two columns (`(name, age)`), and therefore each User added has two columns as well.
-
-Underneath your table structure, go ahead and add some `INSERT` statements to seed your database with some information.
-
-**Hint**: Be sure to create tables/items with primary keys before you create tables/items with their corresponding foreign keys! For example, I'm not going to create Posts before I create Users- my database won't be able to recogize the User my new Post is connected to, because I haven't created one yet!
+## Resources
+*[SQLBolt: Inserting Rows](https://sqlbolt.com/lesson/inserting_rows)
+*[SQLBolt: Updating Rows](https://sqlbolt.com/lesson/updating_rows)
+*[SQLBolt: Deleting Rows](https://sqlbolt.com/lesson/inserting_rows)
