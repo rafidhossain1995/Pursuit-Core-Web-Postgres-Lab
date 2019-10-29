@@ -51,7 +51,11 @@ Write SQL statements that accomplish/express the following.
 - [ ] Find the most liked post.
 - [ ] Find all the information of the user how posted the most liked post.
 
-## v2
+## v2: Bonus
+
+### Tables
+Add to your database the following tables: 
+
 - Comments
   - `id`: integer, **primary key**
   - `commenter_id`: integer, **foreign key** referencing the column `id` in Users.
@@ -65,7 +69,7 @@ Write SQL statements that accomplish/express the following.
   - `album_id`: integer, **foreign key** referencing the column `id` in Albums
   - `url`: string
 
-## Diagram
+### Diagram
 ![facebook-style database diagram](./assets/facebook_style_db_diagram.png)
 
 [Interactive Diagram Here](https://dbdiagram.io/d/5db872c3fa792a62f50da1a5)
