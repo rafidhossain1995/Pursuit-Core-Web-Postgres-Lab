@@ -103,6 +103,7 @@ Let's break it down:
 - Albums contain many Pictures, but each Picture isn't associated with a User - they are associated with an Album, which is then associated with a User. This is because only the user who created the Album can add a Picture to it. Therefore, a `user_id` column in Pictures would be redundant.
 
 ## Resources
-*[SQLBolt: Inserting Rows](https://sqlbolt.com/lesson/inserting_rows)
-*[SQLBolt: Updating Rows](https://sqlbolt.com/lesson/updating_rows)
-*[SQLBolt: Deleting Rows](https://sqlbolt.com/lesson/inserting_rows)
+
+* [SQLBolt: Inserting Rows Tutorial](https://sqlbolt.com/lesson/inserting_rows)
+* [SQLBolt: Updating Rows Tutorial](https://sqlbolt.com/lesson/updating_rows)
+* [SQLBolt: Deleting Rows Tutorial](https://sqlbolt.com/lesson/inserting_rows)
