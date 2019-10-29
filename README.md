@@ -1,12 +1,19 @@
 # Pursuit-Core-Web-Postgres-Lab
 
-Build a database for a Facebook-style app. Your Database should have **SQL tables** for the following data: Users, Posts, and Likes. Write your SQL code in the file `facebook_db.sql`.
+Build a database for a Facebook-style app. Your Database should have **SQL tables** for the following data: Users, Posts, and Likes. Write your SQL code in a file `facebook_db.sql`. 
 
-Let's expand this simple structure to something a little bit deeper. Let's also use the conceptual structure of _primary_ and _foreign_ keys. Our database, at the end of the day, should be structured like this:
 
 ## v1
 
+In the file `facebook_db.sql` have the Database and tables creation SQL statements under the the following SQL comment:
+```
+-- Database & Table Creation
+```
+
 ### Tables
+
+Let's use the conceptual structure of _primary_ and _foreign_ keys for expressing the relationships of our data. Our database, at the end of the day, should be structured like this:
+
 - Users (_table_)
   - `id` (_column_): integer, **primary key**
   - `name`: string
@@ -33,7 +40,10 @@ Let's expand this simple structure to something a little bit deeper. Let's also 
 
 ### Add and Manipulate Data
 
-Write SQL statements that accomplish/express the following.
+Write SQL statements that accomplish/express the following. Have these SQL queries/statements under the following SQL comment:
+```
+-- Add and Manipulate Data
+```
 
 - [ ] Add 5 users
 - [ ] One user should have three posts. Add at least one post for the rest of users. 
@@ -92,7 +102,7 @@ Add to your database the following tables:
 
 [Interactive Diagram Here](https://dbdiagram.io/d/5db872c3fa792a62f50da1a5)
 
-## Explanation
+### Explanation
 Let's think about these associations. In a vacuum, it might not be clear what each individual one is doing. However, we can gain a better understanding when we think about what, exactly, each of these associations is for.
 
 Let's break it down:
