@@ -32,6 +32,8 @@ Let's expand this simple structure to something a little bit deeper. Let's also 
 ## Diagram
 ![facebook-style database diagram](./assets/facebook_style_db_diagram.png)
 
+[Interactive Diagram Here](https://dbdiagram.io/d/5db872c3fa792a62f50da1a5)
+
 ## Explanation
 Let's think about these associations. In a vacuum, it might not be clear what each individual one is doing. However, we can gain a better understanding when we think about what, exactly, each of these associations is for.
 
