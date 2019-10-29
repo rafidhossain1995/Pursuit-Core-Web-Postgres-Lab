@@ -1,6 +1,6 @@
 # Pursuit-Core-Web-Postgres-Lab
 
-Build a database for a Facebook-style app. Your app should have three routes with corresponding **SQL tables**: Users, Posts, and Pictures.
+Build a database for a Facebook-style app. Your Database should have **SQL tables** for the following data: Users, Posts, and Pictures.
 
 Let's expand this simple structure to something a little bit deeper. Let's also use the conceptual structure of _primary_ and _foreign_ keys. Our database, at the end of the day, should be structured like this:
 
@@ -29,6 +29,10 @@ Let's expand this simple structure to something a little bit deeper. Let's also 
   - `album_id`: integer, **foreign key** referencing the column `id` in Albums
   - `url`: string
 
+## Diagram
+![facebook-style database diagram](./assets/facebook_style_db_diagram.png)
+
+## Explanation
 Let's think about these associations. In a vacuum, it might not be clear what each individual one is doing. However, we can gain a better understanding when we think about what, exactly, each of these associations is for.
 
 Let's break it down:
