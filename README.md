@@ -1,9 +1,12 @@
 # Pursuit-Core-Web-Postgres-Lab
 
-Build a database for a Facebook-style app. Your Database should have **SQL tables** for the following data: Users, Posts, and Pictures.
+Build a database for a Facebook-style app. Your Database should have **SQL tables** for the following data: Users, Posts, and Likes.
 
 Let's expand this simple structure to something a little bit deeper. Let's also use the conceptual structure of _primary_ and _foreign_ keys. Our database, at the end of the day, should be structured like this:
 
+## v1
+
+### Tables
 - Users (_table_)
   - `id` (_column_): integer, **primary key**
   - `name`: string
@@ -16,6 +19,33 @@ Let's expand this simple structure to something a little bit deeper. Let's also 
   - `id`: integer, **primary key**
   - `liker_id`: integer, **foreign key** referencing the column `id` in Users
   - `post_id`: integer, **foreign key** referencing the column `id` in Posts.
+
+### Explanation
+
+- Users are the main actors in our Database.
+- Users can create many Posts.
+- A Post can be liked by many Users.
+- Posts are connected to users through the `poster_id` column.
+- Likes are connected to Posts through the `post_id` and to the User that liked the post by the `liker_id` column.
+
+### Add and Manipulate Data
+
+Write SQL statements that accomplish/express the following.
+
+* [ ] Add 5 users
+* [ ] One user should have three posts. Add at least one post for the rest of users. 
+* [ ] User with `id = 1` likes all the other users posts.
+* [ ] User with `id = 2` likes only his/her own post.
+* [ ] User's `2` & `1` posts are liked by user `3` 
+* [ ] User `4` likes all posts except her own and user's `1`.
+* [ ] All the posts of user's `1`, `2`, `3` are liked by user `5`.
+* [ ] Update the age of user with `id` 5 to be `31`.
+* [ ] Update the name of user `3` to be `Alfred`
+* [ ] User `1` stops liking user's `2` post.
+* [ ] The user who had three posts decides to delete his/her last post.
+* [ ] User `2` decides to delete their account from of social media app. 
+
+## v2
 - Comments
   - `id`: integer, **primary key**
   - `commenter_id`: integer, **foreign key** referencing the column `id` in Users.
