@@ -35,18 +35,21 @@ Let's expand this simple structure to something a little bit deeper. Let's also 
 
 Write SQL statements that accomplish/express the following.
 
-* [ ] Add 5 users
-* [ ] One user should have three posts. Add at least one post for the rest of users. 
-* [ ] User with `id = 1` likes all the other users posts.
-* [ ] User with `id = 2` likes only his/her own post.
-* [ ] User's `2` & `1` posts are liked by user `3` 
-* [ ] User `4` likes all posts except her own and user's `1`.
-* [ ] All the posts of user's `1`, `2`, `3` are liked by user `5`.
-* [ ] Update the age of user with `id` 5 to be `31`.
-* [ ] Update the name of user `3` to be `Alfred`
-* [ ] User `1` stops liking user's `2` post.
-* [ ] The user who had three posts decides to delete his/her last post.
-* [ ] User `2` decides to delete their account from of social media app. 
+- [ ] Add 5 users
+- [ ] One user should have three posts. Add at least one post for the rest of users. 
+- [ ] User with `id = 1` likes all the other users posts.
+- [ ] User with `id = 2` likes only his/her own post.
+- [ ] User's `2` & `1` posts are liked by user `3` 
+- [ ] User `4` likes all posts except her own and user's `1`.
+- [ ] All the posts of user's `1`, `2`, `3` are liked by user `5`.
+- [ ] Update the age of user with `id` 5 to be `31`.
+- [ ] Update the name of user `3` to be `Alfred`
+- [ ] User `1` stops liking user's `2` post.
+- [ ] The user who had three posts decides to delete his/her last post.
+- [ ] User `2` decides to delete their account from of social media app. 
+- [ ] Find the user who has given the most likes.
+- [ ] Find the most liked post.
+- [ ] Find all the information of the user how posted the most liked post.
 
 ## v2
 - Comments
