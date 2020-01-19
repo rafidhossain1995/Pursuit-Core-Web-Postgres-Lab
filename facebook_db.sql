@@ -44,4 +44,30 @@ INSERT INTO posts(body, poster_id)
         ('Getting Ready to code soon!', 4),
         ('Pursuit is great', 5);
 
+INSERT INTO likes(liker_id, post_id)
+    VALUES (1,1),
+           (1,2),
+           (1,3),
+           (1,4),
+           (1,5),
+           (2,2),
+           (2,3),
+           (2,4),
+           (2,9),
+           (2,10),
+           (2,11),
+           (3,2),
+           (3,3),
+           (3,4),
+           (3,9),
+           (3,10),
+           (3,11),
+           (3,1),
+           (3,8)
+
+
+            
+
+
+
 
